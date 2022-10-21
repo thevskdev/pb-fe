@@ -82,7 +82,7 @@ const styles = ((theme) => ({
 
         '&.post-heading': {
             fontWeight: 600,
-            fontSize: '1.5rem',
+            fontSize: '3.5rem',
             lineHeight: '1.33',
             letterSpacing: '0.0052em',
         },

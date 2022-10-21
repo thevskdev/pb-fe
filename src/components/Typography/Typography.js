@@ -13,7 +13,7 @@ const Typography = ({
 }) => {
     const useStyles = makeStyles(styles);
     const classes = useStyles();
-
+console.log("type::", type)
     return (
         <>
             <MuiTypography

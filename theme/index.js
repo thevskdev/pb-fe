@@ -1,15 +1,17 @@
 // colors
 import React from 'react';
-import {  createTheme, ThemeProvider } from '@mui/material/styles';
 import { useSelector } from 'react-redux';
-import appSettingsSelectors from 'redux/selectors/appSettings.selector';
+import appSettingsSelectors from 'src/redux/selectors/appSettings.selector';
+import {
+    createTheme, ThemeProvider,
+} from '@mui/material/styles';
 
 export const themeAssets = {
     radius: '10px',
 };
 
 function AppThemeWrapper(props) {
-    const isDarkMode = useSelector(appSettingsSelectors.getThemeState);
+    const isDarkMode = useSelector(appSettingsSelectors?.getThemeState);
 
     // theme of app
     const currentTheme = isDarkMode ? 'dark' : 'light';

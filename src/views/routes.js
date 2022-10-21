@@ -1,5 +1,4 @@
 const routes = {
-
     home: { id: 0, name: 'home', path: '/' },
     logIn: { id: 1, name: 'login', path: '/login' },
     dashboard: { id: 2, name: 'dashboard', path: '/dashboard' },
