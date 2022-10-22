@@ -1,8 +1,8 @@
 import HomePageContainer from '@containers/HomePage/HomePageContainer';
 import React from 'react';
 
-// A style sheet
-const HomePageView = () => {
+const HomePageView = ({data}) => {
+    console.log("data",data)
     return (
        <HomePageContainer />
     );
