@@ -2,7 +2,7 @@ const styles = ((theme) =>{
     console.log("theme",theme)
    return ({
         mainWrapper: {     
-             padding: '20px',
+             padding: '200px',
         },
     })
 });

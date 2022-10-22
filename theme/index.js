@@ -1,5 +1,6 @@
 // colors
 import React from 'react';
+import { CacheProvider } from '@emotion/react';
 import { useSelector } from 'react-redux';
 import appSettingsSelectors from 'src/redux/selectors/appSettings.selector';
 import {
@@ -10,13 +11,16 @@ export const themeAssets = {
     radius: '10px',
 };
 
-function AppThemeWrapper(props) {
+
+function AppThemeWrapper({ children }) {
+    // const { emotionCache = clientSideEmotionCache } = appProps;
+
     const isDarkMode = useSelector(appSettingsSelectors?.getThemeState);
 
     // theme of app
     const currentTheme = isDarkMode ? 'dark' : 'light';
     // font-family
-    const fonts = [ 'Rubik', 'sans-serif' ].join(', ');
+    const fonts = [ 'Poppins', 'sans-serif' ].join(', ');
 
     const primaryMainColor = isDarkMode ? '#0A1929' : '#F3AA4E';
 
@@ -98,11 +102,10 @@ function AppThemeWrapper(props) {
 
     return (
         <ThemeProvider theme={globalTheme}>
-            <div className={`theme-${ currentTheme }`}>
-                {props.children}
+            <div id="theme" className={`theme-${ currentTheme }`}>
+                {children}
             </div>
         </ThemeProvider>
-
     );
 }
 

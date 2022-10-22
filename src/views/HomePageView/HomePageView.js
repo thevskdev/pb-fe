@@ -8,7 +8,8 @@ function HomePageView() {
     const classes = useStyles();
     return (
         <div className={classes.mainWrapper}>
-            <Typography muted type={'big-title'}>Property Bhaijaan welcomes you !</Typography> 
+            <Typography variant="h4"  component="h1" align="center" type="heading">Property Bhaijaan welcomes you !</Typography> 
+            <Typography variant="h6"  component="h6" align="center" type="caption">we are under maintaince :)</Typography> 
         </div>
     );
 }

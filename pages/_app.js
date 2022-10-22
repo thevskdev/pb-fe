@@ -4,14 +4,14 @@ import RootContextProvider from '../context/RootContextProvider';
 import '../styles/globals.css';
 
 
-function MyApp({ Component, pageProps}) {
+function MyApp({ Component, pageProps , appProps}) {
     return (
-        <RootContextProvider>
+        <RootContextProvider appProps>
             <NextNProgress
                 color="orange"
                 height={12}
             />
-             <Component {...pageProps} />
+             <Component {...pageProps} {...appProps} />
         </RootContextProvider>
     );
 }
