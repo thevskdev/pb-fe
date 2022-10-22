@@ -3,6 +3,7 @@ import { makeStyles } from '@mui/styles';
 import React from 'react';
 import styles from './Typography.style.default';
 
+const useStyles = makeStyles(styles);
 const Typography = ({
     className = '',
     type = '',
@@ -11,7 +12,6 @@ const Typography = ({
     muted = false,
     ...otherProps
 }) => {
-    const useStyles = makeStyles(styles);
     const classes = useStyles();
 console.log("type::", type)
     return (

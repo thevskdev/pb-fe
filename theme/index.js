@@ -1,6 +1,5 @@
 // colors
 import React from 'react';
-import { CacheProvider } from '@emotion/react';
 import { useSelector } from 'react-redux';
 import appSettingsSelectors from 'src/redux/selectors/appSettings.selector';
 import {
@@ -13,7 +12,6 @@ export const themeAssets = {
 
 
 function AppThemeWrapper({ children }) {
-    // const { emotionCache = clientSideEmotionCache } = appProps;
 
     const isDarkMode = useSelector(appSettingsSelectors?.getThemeState);
 
@@ -26,7 +24,7 @@ function AppThemeWrapper({ children }) {
 
     const sidebarThemeBgColor = isDarkMode ? '#0A1929' : '#f79f9ffc';
 
-    const fontThemeColor =  isDarkMode ? '#FFFFFF' : '#ffffff';
+    const fontThemeColor =  isDarkMode ? 'white' : 'black';
     const iconThemeColor =  isDarkMode ? '#FFFFFF' : '#FFFFFF';
     const selectedItemNavColor = isDarkMode ? '#f4a52b' : '#3c290ce8';
     const themeBackgroundColor = isDarkMode ? '#464646' : '#000000';
