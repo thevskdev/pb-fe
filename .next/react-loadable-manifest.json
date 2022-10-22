@@ -1,4 +1,10 @@
 {
+  "404/index.js -> @views/404ErrorPageView/404ErrorPageView": {
+    "id": "404/index.js -> @views/404ErrorPageView/404ErrorPageView",
+    "files": [
+      "static/chunks/src_views_404ErrorPageView_404ErrorPageView_js.js"
+    ]
+  },
   "index.js -> src/views/HomePageView/HomePageView": {
     "id": "index.js -> src/views/HomePageView/HomePageView",
     "files": [
